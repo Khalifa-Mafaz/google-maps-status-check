@@ -1,0 +1,14 @@
+# Smoke set checked against live Google Maps on 2026-11-17.
+# This is not the 121-link ground-truth corpus. Re-run with:
+#   gmaps-status -f tests/fixtures/smoke_urls.txt --csv /tmp/smoke.csv
+#
+# Inactive - link dead
+https://maps.app.goo.gl/ThisIsNotARealLinkZZZZ
+# Active place (AH Kerkstraat / Albert Heijn). Pin is !3d/!4d, not the @ camera.
+https://maps.app.goo.gl/LVuCpGzsCMaa32DS9
+# Inactive - place removed. Preview is ~1.4KB and has no place id.
+https://www.google.com/maps/place/Not+A+Real+Place+zzzz/@25.2,55.27,17z/data=!4m2!3m1!1s0xdeadbeef:0xdeadbeef?hl=en
+# Inactive - photo removed. Viewer text: "No user photo available here."
+https://www.google.com/maps/contrib/115683107025634263342/place/ChIJxyCOOno5s1IRpOzhiaSh1Dg/@45.1127578,-93.3848992,3a,75y,90t/data=!3m7!1e2!3m5!1sAF1QipMhyjNpB-DSYAqWkoRCmE1iNy2etOZk11NIBuVz!2e10!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMhyjNpB-DSYAqWkoRCmE1iNy2etOZk11NIBuVz%3Dw365-h547-k-no!7i4672!8i7008?hl=en
+# Active photo. Viewer text: "Photo - Mar 2025". --no-render leaves this Unknown (image HTTP 200).
+https://www.google.com/maps/@48.8583701,2.2944813,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgMDw7sLgxQE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgrass-cs%2FAABkmLe6H12qBzfM832SeGDoP02MSW_aymrsIFSzc8Wzg8wV5ayFXh89KqPpEROuMpvzusRsYRyAETRSzLmdvvtL_ClbWrfRBOawCP_uifNvqoUlRgiCnff-85a0wqyDLtrj1YA7wNXAzg%3Dw86-h114-k-no!7i10064!8i13416?hl=en
